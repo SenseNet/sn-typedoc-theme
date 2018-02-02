@@ -8,7 +8,7 @@ node_js:
   - '9'  
   - '8' 
 script: 
-  - npm lint
+  - npm run lint
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
