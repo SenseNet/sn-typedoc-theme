@@ -1814,7 +1814,7 @@ footer {
   #tsd-search .field {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 20px;
     right: 40px;
     height: 40px; }
     #tsd-search .field input {
@@ -2007,7 +2007,8 @@ ul.tsd-type-parameters {
     display: table-cell;
     position: relative;
     white-space: nowrap;
-    line-height: 40px; }
+    line-height: 40px;
+    vertical-align: middle; }
     .tsd-page-toolbar .table-cell:first-child {
       width: 100%; }
 
@@ -2107,6 +2108,22 @@ ul.tsd-type-parameters {
       margin-right: -5px; }
     .tsd-select .tsd-select-label:before {
       background-position: -280px 0; } }
+
+.sn-menu {
+  float: right;
+  margin-right: 15px;
+  margin-top: 20px; }
+  .sn-menu a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #777;
+    font-family: "Raleway Medium";
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer; }
+  .sn-menu a.active {
+    color: #13a5ad; }
 
 img {
   max-width: 100%; }

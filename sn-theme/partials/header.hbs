@@ -2,7 +2,8 @@
     <div class="tsd-page-toolbar">
         <div class="container">
             <div class="table-wrap">
-                <div class="table-cell" id="tsd-search" data-index="{{relativeURL "assets/js/search.js"}}" data-base="{{relativeURL "./"}}">
+                <div class="table-cell" id="tsd-search" data-index="{{relativeURL " assets/js/search.js "}}" data-base="{{relativeURL " ./
+                    "}}">
                     <div class="field">
                         <label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
                         <input id="tsd-search-field" type="text" />
@@ -13,9 +14,20 @@
                         <li class="state failure">The search index is not available</li>
                     </ul>
 
-                    <a href="{{relativeURL "index.html"}}" class="title">
-                        <img src="{{relativeURL "assets/images/sensenet-logo.png"}}" alt="{{project.name}}" />
+                    <a href="{{relativeURL " index.html "}}" class="title">
+                        <img src="{{relativeURL " assets/images/sensenet-logo.png "}}" alt="{{project.name}}" />
                     </a>
+                        <nav class="sn-menu">
+                            <a class="site-header-nav-item active" href="{{relativeURL "/docs/"}}">Docs</a>
+                            <a class="site-header-nav-item " href="{{relativeURL "/tutorials/"}}">Tutorials</a>
+                            <a class="site-header-nav-item " href="{{relativeURL "/blog/"}}">Blog</a>
+                            <a class="site-header-nav-item " href="{{relativeURL "/community/"}}">Community</a>
+                            <a class="site-header-nav-item " href="{{relativeURL "/releases/"}}">Releases</a>
+                            <a class="site-header-nav-item " href="{{relativeURL "/contact/"}}">Contact</a>
+                            <a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </nav>
                 </div>
 
                 <div class="table-cell" id="tsd-widgets">
@@ -35,13 +47,11 @@
                             <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 
                             {{#unless settings.excludeExternals}}
-                                <input type="checkbox" id="tsd-filter-externals" checked />
-                                <label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-                            {{/unless}}
-
-                            {{#unless settings.excludeNotExported}}
-                                <input type="checkbox" id="tsd-filter-only-exported" />
-                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            <input type="checkbox" id="tsd-filter-externals" checked />
+                            <label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+                            {{/unless}} {{#unless settings.excludeNotExported}}
+                            <input type="checkbox" id="tsd-filter-only-exported" />
+                            <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
                             {{/unless}}
                         </div>
                     </div>
@@ -53,19 +63,10 @@
     </div>
     <div class="tsd-page-title">
         <div class="container">
-            <h1>{{#compact}}
-                {{model.kindString}}&nbsp;
-                {{model.name}}
-                {{#if model.typeParameters}}
-                    &lt;
-                    {{#each model.typeParameters}}
-                        {{#if @index}},&nbsp;{{/if}}
-                        {{name}}
-                    {{/each}}
-                    &gt;
-                {{/if}}
-            {{/compact}}</h1>
-            
+            <h1>{{#compact}} {{model.kindString}}&nbsp; {{model.name}} {{#if model.typeParameters}} &lt; {{#each model.typeParameters}}
+                {{#if @index}},&nbsp;{{/if}} {{name}} {{/each}} &gt; {{/if}} {{/compact}}
+            </h1>
+
             <ul class="tsd-breadcrumb">
                 {{#with model}}{{> breadcrumb}}{{/with}}
             </ul>
