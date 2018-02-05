@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint sn-theme/**",
+    "sasscompile": "sass --watch sn-theme/assets/css/main.sass:sn-theme/assets/css/main.css",
     "commit": "git-cz",
     "publish:development": "npm publish --tag development"
   },
