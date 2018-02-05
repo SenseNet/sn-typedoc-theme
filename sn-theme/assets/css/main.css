@@ -2075,7 +2075,8 @@ ul.tsd-type-parameters {
   .tsd-select.active .tsd-select-list {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s; }
+    transition-delay: 0s;
+    z-index: 100; }
   .tsd-select .tsd-select-list {
     position: absolute;
     visibility: hidden;
@@ -2109,7 +2110,7 @@ ul.tsd-type-parameters {
 
 .sn-menu {
   float: right;
-  margin-right: 175px;
+  margin-right: 200px;
   margin-top: 20px; }
   .sn-menu a {
     display: table-cell;
