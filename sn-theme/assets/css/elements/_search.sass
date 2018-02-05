@@ -7,7 +7,7 @@
 
     .field
         position: absolute
-        left: 0
+        left: 700px
         top: 20px
         right: 40px
         height: 40px
@@ -15,15 +15,14 @@
         input
             box-sizing: border-box
             position: relative
-            top: -50px
             z-index: 1
             width: 100%
             padding: 0 10px
-            opacity: 0
-            outline: 0
-            border: 0
             background: transparent
             color: $COLOR_TEXT
+            font-family: "Raleway Regular"
+            padding: 5px 10px
+            border: solid 1px #999
 
         label
             position: absolute
@@ -37,12 +36,14 @@
     .results
         position: absolute
         visibility: hidden
-        top: 40px
-        width: 100%
+        top: 60px
+        right: 0
+        width: 50%
         margin: 0
         padding: 0
         list-style: none
         box-shadow: 0 0 4px rgba(#000, 0.25)
+        z-index: 100
 
         li
             padding: 0 10px
@@ -69,15 +70,6 @@
             font-weight: normal
 
     &.has-focus
-        background-color: $COLOR_PANEL_DIVIDER
-
-        .field input
-            top: 0
-            opacity: 1
-
-        .title
-            z-index: 0
-            opacity: 0
 
         .results
             visibility: visible

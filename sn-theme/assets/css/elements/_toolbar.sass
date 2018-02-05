@@ -81,9 +81,6 @@
         &:before
             margin: 0
 
-    &.search:before
-        background-position: 0 0
-
     &.menu:before
         background-position: -40px 0
 
@@ -170,7 +167,7 @@
 
 .sn-menu 
     float: right
-    margin-right: 15px
+    margin-right: 175px
     margin-top: 20px
 
     a 
@@ -185,3 +182,21 @@
 
     a.active
         color: #13a5ad
+    a:last-of-type
+        font-size: 35px
+
+.fa
+    font-family: "FontAwesome"
+    display: inline-block
+    font-size: inherit
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-style: normal
+
+.fa-github
+    &:before
+        content: "\f09b"
+
+.fa-search
+    &:before
+        content: "\f002"

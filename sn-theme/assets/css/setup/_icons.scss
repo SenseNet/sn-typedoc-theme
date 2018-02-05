@@ -71,7 +71,6 @@ $member-enum-protected:           -11 * $icon-size;
 $member-interface:                -12 * $icon-size;
 $member-interface-inherited:      -13 * $icon-size;
 
-
 @for $index from 1 through length($type-icons) {
     @each $kind in nth($type-icons, $index) {
         $selector: '.tsd-kind-' + $kind;
