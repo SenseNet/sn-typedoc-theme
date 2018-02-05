@@ -53,9 +53,6 @@
     </div>
     <div class="tsd-page-title">
         <div class="container">
-            <ul class="tsd-breadcrumb">
-                {{#with model}}{{> breadcrumb}}{{/with}}
-            </ul>
             <h1>{{#compact}}
                 {{model.kindString}}&nbsp;
                 {{model.name}}
@@ -68,6 +65,10 @@
                     &gt;
                 {{/if}}
             {{/compact}}</h1>
+            
+            <ul class="tsd-breadcrumb">
+                {{#with model}}{{> breadcrumb}}{{/with}}
+            </ul>
         </div>
     </div>
 </header>

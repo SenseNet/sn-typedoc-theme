@@ -616,7 +616,7 @@ ul.tsd-descriptions > li > :last-child > :last-child > :last-child {
     vertical-align: middle;
     width: 17px;
     height: 17px;
-    margin: 0 3px 2px 0;
+    margin: 0 3px 6px 0;
     background-image: url(../images/icons.png); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .tsd-kind-icon:before {
@@ -1280,7 +1280,7 @@ body {
   color: #222; }
 
 a {
-  color: #4da6ff;
+  color: #13a5ad;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -1496,6 +1496,14 @@ dl.tsd-comment-tags {
   margin-bottom: 2em; }
   .tsd-panel.tsd-comment .lead:last-child {
     margin-bottom: 0; }
+  .tsd-panel.tsd-comment .lead:first-child {
+    color: #13a5ad;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: none;
+    font-family: "Gotham Light";
+    margin-bottom: 5px;
+    text-align: left; }
 
 .toggle-protected .tsd-is-private {
   display: none; }
@@ -1625,21 +1633,21 @@ footer {
     page-break-inside: avoid; }
 .tsd-index-panel a,
 .tsd-index-panel .tsd-parent-kind-module a {
-  color: #9600ff; }
+  color: #13a5ad; }
 .tsd-index-panel .tsd-parent-kind-interface a {
-  color: #7da01f; }
+  color: #38cc73; }
 .tsd-index-panel .tsd-parent-kind-enum a {
-  color: #cc9900; }
+  color: #e74c3c; }
 .tsd-index-panel .tsd-parent-kind-class a {
-  color: #4da6ff; }
+  color: #099dcb; }
 .tsd-index-panel .tsd-kind-module a {
-  color: #9600ff; }
+  color: #13a5ad; }
 .tsd-index-panel .tsd-kind-interface a {
-  color: #7da01f; }
+  color: #38cc73; }
 .tsd-index-panel .tsd-kind-enum a {
-  color: #cc9900; }
+  color: #e74c3c; }
 .tsd-index-panel .tsd-kind-class a {
-  color: #4da6ff; }
+  color: #099dcb; }
 .tsd-index-panel .tsd-is-private a {
   color: #808080; }
 
@@ -1764,8 +1772,7 @@ footer {
 .tsd-panel {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); }
+  background-color: #fff; }
   .tsd-panel:empty {
     display: none; }
   .tsd-panel > h1, .tsd-panel > h2, .tsd-panel > h3 {
